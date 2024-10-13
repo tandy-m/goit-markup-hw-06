@@ -262,6 +262,39 @@ input:checked + label > span {
   gap: 10px;
   border-radius: 4px 4px 4px 4px;
 }
+.media {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 1158px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+  .media {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .media {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .element {
+    flex-basis: calc((100% - 48px) / 2);
+  }
+}
+@media (min-width: 1158px) {
+  .media {
+    gap: 24px;
+  }
+  .element {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
 /**-------------header-------------------**/
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -357,6 +390,7 @@ address {
     ),
     url(../images/people-office.jpg);
   max-width: 1440px;
+  min-width: 320px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
