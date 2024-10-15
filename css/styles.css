@@ -467,6 +467,7 @@ padding: 12px 0px 0px 0px;
     width: 64;
     height: 64;
   }
+
 }
 /* our team 3  */
 .our-team-title {
@@ -665,10 +666,10 @@ justify-content: center;
 }
 /* footer */
 .footer{
-    background-color: #2e2f42;
-  color: #f4f4fd;
-  padding-top: 100px;
-  padding-bottom: 100px;
+background-color: #2e2f42;
+color: #f4f4fd;
+padding-top: 100px;
+padding-bottom: 100px;
 align-items: center;
 justify-content: center;
 }
@@ -857,7 +858,36 @@ height: 40px;
 @media screen and (min-width: 768px) {
   .div-footer{
     display: flex;
-flex-direction: row;
- width: calc((100% - 24px) / 2);
+flex-wrap: wrap;
   }
+  .tablet-footer{
+   display: inline-flex;
+  }
+  input::placeholder {
+width: 264px;
+}
+.container{
+  padding-left: 108px;
+  padding-right: 108px;
+}
+.text-footer-links,
+.sub-text{
+  text-align: start;
+}
+.divdiv-footer{
+  margin-right: 24px;
+}
+.logo-footer{
+  margin-left: 0;
+}
+}
+@media screen and (min-width: 1158px) {
+.div-footer {
+  padding-top: 100px;
+    padding-bottom: 100px;
+ display: ruby;
+ align-items: first baseline;
+ justify-content: space-between;
+
+}
 }
