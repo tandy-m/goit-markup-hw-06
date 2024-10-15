@@ -276,17 +276,9 @@ input:checked + label > span {
 }
 
 /**-------------header-------------------**/
-.header {
-  border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
-.header-div {
-  display: flex;
-}
 /**--------------logo------------------**/
-.logo {
+/* .logo {
   list-style: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -322,10 +314,10 @@ input:checked + label > span {
 }
 address {
   margin-left: auto;
-}
+} */
 
 /**--------------hero section------------------**/
-.hero-section {
+/* .hero-section {
   background-color: #2e2f42;
   font-size: 56px;
   font-weight: 700;
@@ -387,9 +379,9 @@ address {
 
 .button-hero:focus {
   background-color: #404bbf;
-}
+} */
 /**------------our benefits----2--------------------**/
-.benefits {
+/* .benefits {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -425,9 +417,9 @@ address {
 svg {
   width: 64;
   height: 64;
-}
+} */
 /**-------------our team----3--------------------**/
-.our-team-title {
+/* .our-team-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -501,7 +493,7 @@ svg {
 }
 .svg-item {
   fill: #f4f4fd;
-}
+} */
 /**--------------------------------**/
 
 /**----------our Portfolio---4-----------------**/
@@ -535,60 +527,7 @@ svg {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.portfolio-item:hover .b-overlay {
-  transform: translateY(0%);
-}
-.portfolio-item:hover .ben-p {
-  transform: translateY(0%);
-}
-.b-overlay {
-  position: relative;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.b-img {
-  position: relative;
-  overflow: hidden;
-}
-.ben-p {
-  position: absolute;
-  top: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  padding: 40px 32px;
-  background-color: #4d5ae5;
-  height: 100%;
-  width: 100%;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.app {
-  padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-}
-.portfolio-name {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
-.portfolio-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-}
 /**---------------footer-----------------**/
 .footer {
   background-color: #2e2f42;
