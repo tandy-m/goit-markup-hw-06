@@ -797,11 +797,9 @@ color: #f4f4fd;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-
+margin-bottom: 16px;
 }
-.sub-form{
 
-}
 input::placeholder {
   color: #ffffff;
  border: 1px ;
@@ -810,8 +808,10 @@ width: 288px;
 height: 40px;
 }
 .sub-button {
-  margin-left: 77px;
-margin-right: 78px;
+  /* margin-left: 77px;
+margin-right: 78px; */
+display: flex;
+justify-content: center;
   min-width: 165px;
   height: 40px;
   font-family: "Roboto", sans-serif;
@@ -824,7 +824,7 @@ margin-right: 78px;
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-
+padding-top: 8px;
 
 }
 .sub-button:hover,
@@ -832,9 +832,13 @@ margin-right: 78px;
   background-color: #31d0aa;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.sub-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .sub-svg {
   margin-left: 16px;
-
 }
 @media screen and (min-width:0px) and (max-width: 320px) {
 .footer{
