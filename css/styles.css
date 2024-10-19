@@ -717,6 +717,7 @@ padding-bottom: 100px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+  padding-top: 16px;
 }
 
 .logo-type-footer {
@@ -741,9 +742,12 @@ color: #f4f4fd;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  
+  text-align: center;
 }
 .footer-list{
+    align-items: center;
+  justify-content: center;
+  display: flex;
     gap: 16px;
 }
 .footer-item {
@@ -755,14 +759,17 @@ color: #f4f4fd;
   height: 100%;
   border-radius: 50%;
    background-color: #31d0aa;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #31d0aa;
+  margin-right: auto;
 }
 .footer-link {
   background-color: var(--background-color, #4d5ae5);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link:hover {
-  background-color: #31d0aa;
-}
+.footer-link:hover,
 .footer-link:focus {
   background-color: #31d0aa;
 }
@@ -776,6 +783,7 @@ color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  text-align: center;
 }
 .sub-input {
   width: 264px;
@@ -789,8 +797,11 @@ color: #f4f4fd;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-}
 
+}
+.sub-form{
+
+}
 input::placeholder {
   color: #ffffff;
  border: 1px ;
@@ -799,6 +810,8 @@ width: 288px;
 height: 40px;
 }
 .sub-button {
+  margin-left: 77px;
+margin-right: 78px;
   min-width: 165px;
   height: 40px;
   font-family: "Roboto", sans-serif;
@@ -811,6 +824,8 @@ height: 40px;
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+
+
 }
 .sub-button:hover,
 .sub-button:focus {
@@ -819,29 +834,19 @@ height: 40px;
 }
 .sub-svg {
   margin-left: 16px;
+
 }
-@media screen and (max-width: 320) {
+@media screen and (min-width:0px) and (max-width: 320px) {
 .footer{
-align-items: center;
+
 justify-content: center;
 }
 .logo-footer {
   display: inline-block;
  text-align: center;
 }
-.text-footer-links {
-    text-align: center;
-}
-.footer-list {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.footer-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
+.text-footer{
+ 
 }
 .sub-text {
   text-align: center;
@@ -849,12 +854,11 @@ justify-content: center;
 .sub-form {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   gap: 24px;
 }
-.footer-wraper{
-    align-items: center;
+.sub-label{
+  align-items: center;
   justify-content: center;
 }
 }
