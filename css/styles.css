@@ -560,12 +560,15 @@ justify-content: center;
   fill: #f4f4fd;
 }
 @media screen and (min-width: 768px) {
-    .team-list{
-    display: flex;
-  flex-wrap: wrap;
-  }
+.team-list {
+ 
+/* justify-content: center; */
+}
   .team-item{
-width: 100%;
+     display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  width: 100%;
    width: calc((100% - 24px) / 2);
 }
 }
