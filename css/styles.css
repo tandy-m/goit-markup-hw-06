@@ -120,6 +120,7 @@ button {
 margin: 0 auto;
     justify-content: center;
     align-items: center;
+    height: 72px;
   }
   .burger-btn {
     display: none;
@@ -163,7 +164,7 @@ margin: 0 auto;
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 8px;
+    bottom: 1px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
@@ -180,22 +181,24 @@ margin: 0 auto;
     display: block;
     }
   .contacts-list {
-    display: flex;
-    flex-direction: column;
-margin-left: 121px;
-margin-right: auto;
-font-weight: 400;
-font-size: 12px;
-line-height: 117%;
-letter-spacing: 0.04em;
+  display: flex;
+  flex-direction: column;
+  margin-left: 121px;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
 
   }
   .contacts-list-link {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+gap: 12px;
+margin-right: 16px;
+}
 }
 @media screen and (min-width: 1158px) {
   .logo {
@@ -323,15 +326,17 @@ padding: 12px 0px 0px 0px;
 
 /* hero */
 .hero-section {
-  min-width: 320px;
-  max-width: 767px;
+  /* min-width: 320px;
+  max-width: 767px; */
   height: 432px;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/320.jpg);
+    /* url(../images/320.jpg),
+    url(../images/768.jpg), */
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -372,7 +377,7 @@ padding: 12px 0px 0px 0px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .hero-section {
     min-width: 768px;
     max-width: 1157px;
@@ -406,7 +411,7 @@ padding: 12px 0px 0px 0px;
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-     
+     align-items: center;
   }
 
   .hero-section-title {
@@ -416,6 +421,7 @@ padding: 12px 0px 0px 0px;
     font-weight: 700;
     line-height: 107%;
   }
+
   .button-hero {
     /* padding-top: 188px; */
   }
@@ -444,7 +450,7 @@ padding: 12px 0px 0px 0px;
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
-  text-align: center;
+
 }
 .text-benefits {
   font-weight: 500;
@@ -476,6 +482,21 @@ padding: 12px 0px 0px 0px;
   svg {
     width: 64;
     height: 64;
+  }
+  .benefits-title{
+font-weight: 500;
+font-size: 20px;
+  }
+ 
+  .text-benefits{
+font-weight: 400;
+font-size: 16px;
+  }
+  .hero-section-title{
+font-weight: 700;
+text-align: center;
+letter-spacing: 0.02em;
+font-size: 56px;
   }
 
 }
@@ -820,15 +841,14 @@ margin-bottom: 16px;
 }
 
 input::placeholder {
-  color: #ffffff;
- border: 1px ;
+color: #ffffff;
+border: 1px ;
 border-radius: 4px;
 width: 288px;
 height: 40px;
 }
 .sub-button {
-  /* margin-left: 77px;
-margin-right: 78px; */
+
 display: flex;
 justify-content: center;
   min-width: 165px;
@@ -861,16 +881,13 @@ padding-top: 8px;
 }
 @media screen and (min-width:0px) and (max-width: 320px) {
 .footer{
-
 justify-content: center;
 }
 .logo-footer {
   display: inline-block;
  text-align: center;
 }
-.text-footer{
- 
-}
+
 .sub-text {
   text-align: center;
 }
@@ -915,6 +932,9 @@ width: 264px;
 .logo-footer{
   margin-left: 0;
 }
+.sub-label{
+  margin-right: 24px;
+}
 }
 @media screen and (min-width: 1158px) {
 .footer {
@@ -925,13 +945,12 @@ width: 264px;
   display: flex;
   align-items: baseline;
 }
+.divdiv-footer{
+  margin-right: 120px;
+}
 .div-footer {
   display: flex;
-  align-items: baseline;
-}
-
-.logo-footer {
-  display: inline-block;
+  flex-wrap: nowrap;
 }
 
 .footer-list {
@@ -953,18 +972,42 @@ width: 264px;
   margin-left: 80px;
   display: block;
 }
-
+.footer-inline{
+ float: left;
+}
 .sub-form {
   display: flex;
+  flex-wrap: nowrap;
   gap: 24px;
 }
-
 
 .sub-button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
+.text-footer {
+  width: 264px;
+}
+.container-team{
+  padding-left: 48px;
+  
+}
+}
+/* modal */
+.modal{
+  width: 288px;
+  height: 623px;
+}
+@media screen and (min-width: 768px){
+.modal{
+  width: 408px;
+  height: 584px;
+}
+}
+@media screen and (min-width: 1158px) {
+.modal{
+  width: 408px;
+  height: 584px;
+}
 }
