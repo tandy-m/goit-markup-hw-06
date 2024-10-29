@@ -517,8 +517,11 @@ font-size: 56px;
   flex-wrap: wrap;
 justify-content: center;
 gap: 72px;
-margin: 0px 156px 0px 156px;
+
 }
+/* .mark{
+margin-left: 156px;
+} */
 .team-item {
 
   background-color: #ffffff;
